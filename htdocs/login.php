@@ -13,7 +13,7 @@
     $dbconn = pg_connect("host=localhost port=5432 dbname=carpoolerz user=postgres password=postgres")
                 or die('Could not connect: ' . pg_last_error());
 
-    if(isset($_POST['loginbutton']) != "") {
+
         $username = $_POST['username'];
         $password = $_POST['password'];
 
@@ -49,9 +49,8 @@
             echo "\n Error. Incorrect Email or Password... \n";
         }
 
-    } else {
-        echo "<h2>Not logged in...</h2>";
-    }
+
+
 ?>
 
 
